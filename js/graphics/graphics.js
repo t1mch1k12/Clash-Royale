@@ -11,6 +11,8 @@ window.drawBridge = function(ctx) {
         ctx.lineTo(450, 250 + i * 20);
         ctx.stroke();
     }
+}
+
 
 window.drawRiver = function(ctx) {
     ctx.fillStyle = '#4169e1';
@@ -26,6 +28,7 @@ window.drawRiver = function(ctx) {
         ctx.stroke();
         ctx.globalAlpha = 1;
     }
+}
     
   
 window.drawArena = function(ctx) {
