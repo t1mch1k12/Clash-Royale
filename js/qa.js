@@ -5,21 +5,18 @@ function helloQA() {
     console.log("Integration & QA ready ✅");
 }
 
-
 function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
-    // Здесь будут вызовы
+    // Арена
+    drawArena(ctx);
+    drawRiver(ctx);
+    drawBridge(ctx);
     
-    requestAnimationFrame(gameLoop);
-}
-
-helloQA()
-
-gameLoop();
-
-function gameLoop() {
-    // ... предыдущий код ...
+    // Башни
+    drawPlayerTower(ctx, 150, 400);
+    drawEnemyTower(ctx, 650, 400);
+    drawKingTower(ctx, 400, 200, true);
     
     // Войска
     drawTroop(ctx, 200, 300, 'knight', true);
@@ -33,3 +30,7 @@ function gameLoop() {
     
     requestAnimationFrame(gameLoop);
 }
+
+helloQA()
+
+gameLoop();
