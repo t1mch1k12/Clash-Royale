@@ -1,3 +1,6 @@
+const canvas = document.getElementById('gameCanvas'); // замените на ID вашего canvas
+const ctx = canvas.getContext('2d');
+
 // Функция для рисования рыцаря
 window.drawKnight = function(ctx, x, y, isPlayer) {
     const color = isPlayer ? '#3a6ea5' : '#a53a3a';
@@ -18,8 +21,6 @@ window.drawKnight = function(ctx, x, y, isPlayer) {
     ctx.lineTo(x + 20, y - 20);
     ctx.stroke();
 }
-const canvas = document.getElementById('gameCanvas'); // замените на ID вашего canvas
-const ctx = canvas.getContext('2d');
 
 // Проверка игрока (синий цвет)
 drawKnight(ctx, 300, 300, true);
