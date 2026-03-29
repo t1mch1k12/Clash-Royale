@@ -1,3 +1,4 @@
+
 // ГЛАВНЫЙ ЦИКЛ - запуск и отрисовка
 (function() {
     const canvas = document.getElementById('gameCanvas');
@@ -27,3 +28,4 @@
     render();
     console.log('Stage 1: Game initialized - static graphics ready');
 })();
+
