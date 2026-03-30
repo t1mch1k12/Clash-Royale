@@ -46,9 +46,9 @@ window.Core = {
             QA.log(`Deployed ${type} at (${Math.floor(x)},${Math.floor(y)}) - Elixir: ${Math.floor(GameState.elixir)}`);
             return true;
         };
-
+        console.log("start");
         Graphics.drawUnit(unit);
-        
+        console.log("end");
         return false;
     },
     // ~~~~~~~~~~~~~~~~~~~
